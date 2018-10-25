@@ -22,4 +22,4 @@ Here goes some useful links to get started with this boilerplate
 
 ### To Add more routes you can create a new one on the [Router.tsx](https://github.com/lXSPandora/react-ts-boilerplate/blob/master/src/Routing/Router.tsx) File
 
-### To Modify the css global style, `ThemeProvider` and the styled-components stuff its on [index.tsx](https://github.com/lXSPandora/react-ts-boilerplate/blob/master/src/index.tsx)
+### To Modify the css global style, ThemeProvider and the styled-components stuff its on [index.tsx](https://github.com/lXSPandora/react-ts-boilerplate/blob/master/src/index.tsx)
