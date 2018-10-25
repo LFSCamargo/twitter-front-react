@@ -1,8 +1,6 @@
 # React Typescript Boilerplate
-
-<img src="https://cdn-images-1.medium.com/max/1200/1*x6EnTlBhjcyu605VPDysZQ.jpeg"/>
-
 [![npm version](https://badge.fury.io/js/react.svg)](https://badge.fury.io/js/react)
+<img src="https://cdn-images-1.medium.com/max/1200/1*x6EnTlBhjcyu605VPDysZQ.jpeg"/>
 
 This is a simple react boiler plate with React Router, Styled Components and Typescript. I made this just to start new react applications more easily without the whole react ground zero configuration.
 
