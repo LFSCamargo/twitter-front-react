@@ -17,7 +17,7 @@ const GlobalStyle = createGlobalStyle`
 
 const Theme = {
   primary: '#1e74ff',
-}
+};
 
 ReactDOM.render(
   (
@@ -28,6 +28,6 @@ ReactDOM.render(
       </div>
     </ThemeProvider>
   ),
-  document.getElementById('root') as HTMLElement
+  document.getElementById('root'),
 );
 registerServiceWorker();

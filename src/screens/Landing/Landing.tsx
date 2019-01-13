@@ -1,11 +1,11 @@
 import * as React from 'react';
 
 class Landing extends React.Component {
-  public render() {
+  render() {
     return (
       <p>Hello World</p>
-    )
+    );
   }
-};
+}
 
 export default Landing;

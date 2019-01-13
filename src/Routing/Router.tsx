@@ -7,4 +7,4 @@ export default () => (
   <BrowserRouter>
     <Route exact={true} component={Landing} />
   </BrowserRouter>
-)
+);
