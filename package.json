@@ -1,5 +1,5 @@
 {
-  "name": "react-ts-boilerplate",
+  "name": "template-react",
   "version": "0.1.0",
   "dependencies": {
     "dotenv": "4.0.0",
