@@ -1,17 +1,17 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
-
-import registerServiceWorker from './registerServiceWorker';
-import Router from './Routing/Router';
+import Router from './router';
+import serviceWorker from './config/serviceWorker';
 
 const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css?family=Rubik');
   body {
-    font-family: 'Rubik', sans-serif;
+    /* font-family: 'Rubik', sans-serif; */
     display: flex;
-    flex: 1;
     background-color: white;
+    margin: 0px !important;
+    padding: 0px !important;
   }
 `;
 
@@ -20,14 +20,13 @@ const Theme = {
 };
 
 ReactDOM.render(
-  (
-    <ThemeProvider theme={Theme}>
-      <div>
-        <GlobalStyle />
-        <Router />
-      </div>
-    </ThemeProvider>
-  ),
+  <ThemeProvider theme={Theme}>
+    <div>
+      <GlobalStyle />
+      <Router />
+    </div>
+  </ThemeProvider>,
   document.getElementById('root'),
 );
-registerServiceWorker();
+
+serviceWorker();
