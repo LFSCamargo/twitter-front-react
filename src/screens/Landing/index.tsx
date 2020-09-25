@@ -1,11 +1,9 @@
-import * as React from 'react';
+import React, { FC } from 'react';
 
-class Landing extends React.Component {
-  render() {
-    return (
-      <p>Hello World</p>
-    );
-  }
-}
+type Props = {};
+
+const Landing: FC<Props> = () => {
+  return <h1>Hello World</h1>;
+};
 
 export default Landing;

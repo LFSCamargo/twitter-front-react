@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-
-import Landing from '../screens/Landing';
+import { Landing } from '~/screens';
 
 export default () => (
   <BrowserRouter>

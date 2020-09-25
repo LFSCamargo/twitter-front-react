@@ -1,23 +1,9 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { createGlobalStyle, ThemeProvider } from 'styled-components';
-import Router from './router';
-import serviceWorker from './config/serviceWorker';
-
-const GlobalStyle = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css?family=Rubik');
-  body {
-    /* font-family: 'Rubik', sans-serif; */
-    display: flex;
-    background-color: white;
-    margin: 0px !important;
-    padding: 0px !important;
-  }
-`;
-
-const Theme = {
-  primary: '#1e74ff',
-};
+import { ThemeProvider } from 'styled-components';
+import Router from '~/router';
+import { Theme, GlobalStyle } from '~/design';
+import serviceWorker from '~/config/serviceWorker';
 
 ReactDOM.render(
   <ThemeProvider theme={Theme}>
