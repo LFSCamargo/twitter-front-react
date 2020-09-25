@@ -3,6 +3,7 @@
     "baseUrl": ".",
     "outDir": "build/dist",
     "module": "esnext",
+    "types": ["react", "jest", "node"],
     "target": "es5",
     "lib": ["es6", "dom", "esnext.asynciterable"],
     "sourceMap": true,
@@ -16,7 +17,10 @@
     "noImplicitAny": true,
     "importHelpers": true,
     "strictNullChecks": true,
+    "allowSyntheticDefaultImports": true,
     "suppressImplicitAnyIndexErrors": true,
     "noUnusedLocals": true
-  }
+  },
+  "include": ["src"],
+  "exclude": ["config/", "jest.config.js", "scripts/", "babel.config.js"]
 }
