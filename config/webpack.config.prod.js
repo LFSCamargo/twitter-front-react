@@ -57,6 +57,7 @@ module.exports = {
       '.jsx',
     ],
     alias: {
+      '~': path.resolve(__dirname, 'src/'),
       'react-native': 'react-native-web',
     },
     plugins: [
