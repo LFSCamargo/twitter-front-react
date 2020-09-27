@@ -11,7 +11,7 @@ interface Props {
   redirectRoute: string;
 }
 
-const PrivateRoute: FC<Props> = ({ component: Component, isLogged, ...rest }) => {
+const PrivateRoute: FC<Props> = ({ component: Component, isLogged, redirectRoute, ...rest }) => {
   return (
     <Route
       {...rest}
@@ -21,7 +21,7 @@ const PrivateRoute: FC<Props> = ({ component: Component, isLogged, ...rest }) =>
         ) : (
           <Redirect
             to={{
-              pathname: ,
+              pathname: redirectRoute,
               state: { from: props.location.pathname },
             }}
           />
