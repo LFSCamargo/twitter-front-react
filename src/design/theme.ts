@@ -14,8 +14,10 @@ const white = '#FFF';
 const lightenGrey = '#7D8E9B';
 const grey = '#576A7B';
 const whiterGrey = '#e8ebee';
+const separatorColor = '#3A444C';
+const separatorColorWhite = '#ECEEF0';
 
-const accents = {
+export const accents = {
   blue,
   transparentBlue: makeTransparent(blue),
   yellow,
@@ -37,6 +39,7 @@ export const DarkTheme = {
     greyedText: lightenGrey,
     selectionColor: white,
     greySearchInput: lightenGrey,
+    separatorColor: separatorColor,
     accents,
   },
 };
@@ -47,7 +50,8 @@ export const Theme = {
     textColor: black,
     greyedText: grey,
     selectionColor: black,
-    greyTextInput: whiterGrey,
+    greySearchInput: whiterGrey,
+    separatorColor: separatorColorWhite,
     accents,
   },
 };
