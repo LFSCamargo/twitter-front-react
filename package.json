@@ -7,7 +7,6 @@
     "docz": "^2.3.1",
     "dotenv": "4.0.0",
     "dotenv-expand": "4.2.0",
-    "gatsby-plugin-mdx": "^1.7.1",
     "graphql": "^15.4.0",
     "graphql-tag": "^2.11.0",
     "polished": "^4.0.5",
