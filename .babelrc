@@ -1,0 +1,14 @@
+{
+  "presets": [
+    "babel-preset-react-app",
+    "@babel/preset-react"
+  ],
+  "plugins": [
+    [
+      "babel-plugin-root-import",
+      {
+        "rootPathSuffix": "src"
+      }
+    ]
+  ]
+}
