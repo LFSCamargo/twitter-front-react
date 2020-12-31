@@ -14,11 +14,10 @@ const SignUp: FC<Props> = ({}) => {
     initialValues: {
       email: '',
       password: '',
-      picture: '',
       username: '',
     },
     onSubmit: async values => {
-      await register(values.username, values.email, values.picture, values.password);
+      await register(values.username, values.email, values.password);
     },
   });
 
@@ -33,14 +32,6 @@ const SignUp: FC<Props> = ({}) => {
           name="username"
           value={values.username}
           onChange={e => setFieldValue('username', e.target.value)}
-          required
-        />
-        <Input
-          type="text"
-          placeholder="Picture URL"
-          name="picture"
-          value={values.picture}
-          onChange={e => setFieldValue('picture', e.target.value)}
           required
         />
         <Input

@@ -7,11 +7,11 @@ interface Props {
   location?: Location;
   path: string;
   exact?: boolean;
-  isLogged: boolean;
   redirectRoute: string;
 }
 
-const PrivateRoute: FC<Props> = ({ component: Component, isLogged, redirectRoute, ...rest }) => {
+const PrivateRoute: FC<Props> = ({ component: Component, redirectRoute, ...rest }) => {
+  const isLogged = localStorage.getItem('token') !== null;
   return (
     <Route
       {...rest}

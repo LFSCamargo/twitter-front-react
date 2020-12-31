@@ -1,4 +1,5 @@
 import { gql, useMutation } from '@apollo/client';
+import { useHistory } from 'react-router';
 import { useCallback, useState } from 'react';
 import { useToasts } from '~/hooks';
 import { LoginMutationVariables, LoginMutation } from './__generated__/LoginMutation';
@@ -13,13 +14,14 @@ const mutationQuery = gql`
 
 export const useLoginMutation = () => {
   const { showToast } = useToasts();
+  const { push } = useHistory();
   const [isLoading, setIsLoading] = useState(false);
   const [mutate] = useMutation<LoginMutation, LoginMutationVariables>(mutationQuery);
 
   const login = useCallback(async (email: string, password: string) => {
     setIsLoading(true);
     try {
-      const { data, errors } = await mutate({
+      const { data } = await mutate({
         variables: {
           input: {
             email,
@@ -28,10 +30,8 @@ export const useLoginMutation = () => {
         },
       });
 
-      console.log(data);
-      console.log(errors);
-
       localStorage.setItem('token', data?.login?.token || '');
+      push('/update-profile');
     } catch (error) {
       showToast(error.message, 3000, 'bottom-center');
     } finally {

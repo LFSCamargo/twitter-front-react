@@ -1,5 +1,25 @@
 import styled from 'styled-components';
 
+export const Image = styled.img`
+  margin: 0px;
+  cursor: pointer;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  transition: 0.3s;
+  margin: 20px;
+  :active {
+    opacity: 0.5;
+  }
+`;
+
+export const ImageWrapper = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+`;
+
 export const Wrapper = styled.div`
   background-color: ${props => props.theme.colors.backgroundColor};
   display: flex;
@@ -27,7 +47,6 @@ export const Wrapper = styled.div`
   h1 {
     font-size: 23px;
     color: ${props => props.theme.colors.textColor};
-    text-align: center;
   }
   svg {
     fill: ${props => props.theme.colors.textColor};

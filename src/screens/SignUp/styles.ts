@@ -22,6 +22,7 @@ export const Wrapper = styled.div`
     max-width: 400px;
     width: 100%;
     padding: 20px;
+    margin: 10px;
   }
   h1 {
     font-size: 23px;
