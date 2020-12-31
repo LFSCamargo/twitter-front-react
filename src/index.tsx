@@ -1,5 +1,7 @@
+import 'react-toastify/dist/ReactToastify.css';
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
+import { ToastContainer } from 'react-toastify';
 import { ThemeProvider } from 'styled-components';
 import Router from '~/router';
 import { client } from '~/config';
@@ -14,6 +16,7 @@ const App = () => {
       <div>
         <GlobalStyle />
         <Router />
+        <ToastContainer closeButton={false} hideProgressBar />
       </div>
     </ThemeProvider>
   );

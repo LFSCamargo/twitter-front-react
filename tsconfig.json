@@ -10,7 +10,7 @@
     "allowJs": true,
     "jsx": "react",
     "moduleResolution": "node",
-    "rootDir": "src",
+    "rootDir": ".",
     "forceConsistentCasingInFileNames": true,
     "noImplicitReturns": true,
     "noImplicitThis": true,
@@ -22,7 +22,7 @@
     "noUnusedLocals": true,
     "typeRoots": ["@types"],
     "paths" : {
-      "~/*" : ["src/*"]
+      "~/*" : ["src/*", "__generated__/*"]
     }
   },
   "include": ["src", "@types"],

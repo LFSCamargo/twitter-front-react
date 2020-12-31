@@ -3,6 +3,9 @@
 # dependencies
 /node_modules
 
+# apollo generated files
+__generated__/
+
 # testing
 /coverage
 
