@@ -20,10 +20,11 @@
     "allowSyntheticDefaultImports": true,
     "suppressImplicitAnyIndexErrors": true,
     "noUnusedLocals": true,
+    "typeRoots": ["@types"],
     "paths" : {
       "~/*" : ["src/*"]
     }
   },
-  "include": ["src"],
+  "include": ["src", "@types"],
   "exclude": ["config/", "jest.config.js", "scripts/", "babel.config.js"]
 }
