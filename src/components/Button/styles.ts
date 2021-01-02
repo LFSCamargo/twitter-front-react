@@ -26,8 +26,9 @@ export const Wrapper = styled.button<WrapperProps>`
         ? css`
             background: ${props.selectedColor?.transparent};
           `
-        : ``}
-    opacity: 0.5;
+        : css`
+            opacity: 0.5;
+          `}
   }
 `;
 

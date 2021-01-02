@@ -1,6 +1,6 @@
 import { transparentize } from 'polished';
 
-const makeTransparent = transparentize(50);
+const makeTransparent = transparentize(0.8);
 
 const blue = '#1E96EB';
 const yellow = '#FEA432';
