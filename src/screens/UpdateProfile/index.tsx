@@ -1,4 +1,5 @@
 import React, { FC } from 'react';
+import * as Yup from 'yup';
 import { useFormik } from 'formik';
 import { Button, TextInput } from '~/components';
 import { useUpdateProfile } from './hooks';
@@ -15,6 +16,11 @@ const UpdateProfile: FC<Props> = ({}) => {
       nickname: '',
       bio: '',
     },
+    validationSchema: Yup.object({
+      nickname: Yup.string()
+        .required('This is a required field')
+        .lowercase('This field should be lowercase'),
+    }),
     onSubmit: formValues => {
       updateUserProfile({ input: formValues });
     },
