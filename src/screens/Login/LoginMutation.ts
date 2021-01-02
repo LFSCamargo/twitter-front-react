@@ -8,6 +8,7 @@ const mutationQuery = gql`
   mutation LoginMutation($input: LoginInput!) {
     login(input: $input) {
       token
+      hasEditedProfile
     }
   }
 `;
@@ -31,7 +32,11 @@ export const useLoginMutation = () => {
       });
 
       localStorage.setItem('token', data?.login?.token || '');
-      push('/update-profile');
+
+      if (data?.login?.hasEditedProfile) {
+        return push('/home');
+      }
+      return push('/update-profile');
     } catch (error) {
       showToast(error.message, 3000, 'bottom-center');
     } finally {
